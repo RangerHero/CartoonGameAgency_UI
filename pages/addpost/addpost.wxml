@@ -1,0 +1,14 @@
+<!--pages/addpost/addpost.wxml-->
+<view class="title">
+    <text>标题：</text>
+    <input type="text" value="" placeholder="输入标题" bindinput="titleInput" />
+</view>
+
+<view class="content">
+    <text>内容：</text>
+    <textarea class="input" placeholder="请输入内容" auto-focus="true" bindinput="contentInput"/>
+</view>
+
+<view class='button'>
+      <button type='primary' form-type='submit' bindtap="addPost">发表</button>
+</view>

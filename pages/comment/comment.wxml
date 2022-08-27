@@ -1,0 +1,8 @@
+<!--pages/comment/comment.wxml-->
+<view class="input">
+  <textarea class="input" placeholder="请输入评论" auto-focus="true" bindinput="commentInput"/>
+</view>
+
+<view class='button'>
+  <button type='primary' bindtap="toUserPost" >发表评论</button>
+</view>

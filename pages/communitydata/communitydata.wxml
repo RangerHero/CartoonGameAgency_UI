@@ -1,0 +1,47 @@
+<!--pages/communitydata/communitydata.wxml-->
+<!-- 社区标题 -->
+<view class="title">
+    <view class="box-all" bindtap="toCommunity">
+        <view class="community-avatar">
+            <image src="{{community.logo}}"></image>
+        </view>
+        <view class="community-title">
+            <text>{{community.name}}</text>
+            <view class="community-docs">{{community.introduction}}</view>
+        </view>
+    </view>
+</view>
+<view class="community-image">
+    <swiper autoplay="ture" interval="10000" indicator-dots="red" indicator-active-color="pink" class="sw">
+        <swiper-item>
+            <view class="box-image">
+                <image src="http://localhost:8080/images/title/bh3images/bh3-image1.png"></image>
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <view class="box-image">
+                <image src="http://localhost:8080/images/title/bh3images/bh3-image2.png"></image>
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <view class="box-image">
+                <image src="http://localhost:8080/images/title/bh3images/bh3-image3.png"></image>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>
+<!-- 导航栏 -->
+<view class="nav">
+    <view class="post">帖子</view>
+    <view class="add-post" bindtap="toAddPost" data-id="{{community.id}}">+发帖</view>
+</view>
+<!-- 社区帖子 -->
+
+<block wx:for="{{invitation}}" wx:key="invitation">
+    <view class="user-post">
+        <view class="one-post" bindtap="toUserPost" data-id="{{item.id}}">
+            <view class="post-title">{{item.title}}</view>
+            <view class="post-user"> 发帖人：{{item.userName}}</view>
+        </view>
+    </view>
+</block>

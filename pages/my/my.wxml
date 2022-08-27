@@ -1,0 +1,66 @@
+<!--pages/my/my.wxml-->
+<view class="user-info">
+    <block wx:for="{{userinfo}}" wx:key="userinfo">
+        <view class="user-avatar">
+            <image src="{{item.userAvatar}}"></image>
+            <view class="user-name">
+                <text>{{username}}</text>
+                <view class="user-birth">生日：{{item.birthday}}</view>
+            </view>
+        </view>
+    </block>
+
+    <view class="info">
+        <view class="nav">
+            <view bindtap="navSwitch" data-index="0" class="{{navState==0 ? 'nav-switch-style':''}}">帖子</view>
+            <view bindtap="navSwitch" data-index="1" class="{{navState==1 ? 'nav-switch-style':''}}">动态</view>
+            <view bindtap="navSwitch" data-index="2" class="{{navState==2 ? 'nav-switch-style':''}}">通知</view>
+        </view>
+        <!-- 滑动页 -->
+        <swiper bindchange="bindchange" current="{{navState}}" class="navstate">
+            <block>
+                <swiper-item>
+                    <block wx:for="{{userpost}}" wx:key="userpost">
+                        <view class="style-roll">
+                            <view class="user-post">
+                                <view class="one-post" bindtap="toUserPost">
+                                    <view class="post-title">{{item.title}}</view>
+                                    <view class="post-user"> {{item.content}}</view>
+                                </view>
+                            </view>
+                        </view>
+                    </block>
+                </swiper-item>
+
+                <swiper-item>
+                <block wx:for="{{userComment}}" wx:key="comment">
+                  <view class="style-roll">
+                        <view class="user-invi">
+                            <view class="one-invi" bindtap="toUserPost">
+                                <view class="invi-title">评论时间：{{item.time}}</view>
+                                <view class="invi-user"> 内容：{{item.content}}</view>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+                    
+
+                    <view class="style-roll">
+                        <view class="user-invi">
+                            <view class="one-invi" bindtap="toUserPost">
+                                <view class="invi-title">【车站指南】漫游测试攻略合集楼—游戏机制与基础知识 持续更新</view>
+                                <view class="invi-user"> 我：一般</view>
+                            </view>
+                        </view>
+                    </view>
+
+                </swiper-item>
+                <swiper-item>
+                    <view class="style-roll">
+                        <text>通知</text>
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+</view>

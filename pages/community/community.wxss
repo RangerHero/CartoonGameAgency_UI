@@ -1,0 +1,50 @@
+/* pages/community/community.wxss */
+/* 标题 */
+.content .title{
+    height: 40px;
+    text-align: center;
+}
+.content text{
+  font-size: 25px;
+  margin-top: 15rpx;
+  /* font-weight: bolder; */
+  color: rgb(0, 0, 0);
+  /* border: 1px solid red; */
+}
+
+/* 社区列表 */
+.box-all {
+    width: 100%;
+    /* height: 72px; */
+    /* border: 1px solid black; */
+    display:flex;
+    box-shadow:0px 0px 3px 4px #ccc;
+}
+
+.box-all .community-avatar{
+    width: 72px;
+    height: 72px;
+    margin-left: 5px;
+    /* border: 1px solid red; */
+}
+
+.box-all .community-avatar image{
+    width: 71px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.box-all .community-title{
+    width: 300px;
+    /* height: 62px; */
+    margin-top: 8px;
+    margin-left: 5px;
+    /* border: 1px solid red; */
+}
+.box-all .community-title text{
+  font-weight: bold;
+}
+.null{
+    width: 100%;
+    height: 10px;
+}

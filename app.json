@@ -1,0 +1,49 @@
+{
+    "pages": [
+        "pages/login/login",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/community/community",
+        "pages/my/my",
+        "pages/communitydata/communitydata",
+        "pages/classify/classify",
+
+        "pages/addpost/addpost",
+        "pages/post/post",
+        "pages/userpost/userpost",
+        "pages/comment/comment"
+    ],
+    "tabBar": {
+        "color": "",
+        "selectedColor": "",
+        "backgroundColor": "",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/title/path_1.png",
+                "selectedIconPath": "images/title/path_2.png"
+            },
+            {
+                "pagePath": "pages/community/community",
+                "text": "社区",
+                "iconPath": "images/title/path_3.png",
+                "selectedIconPath": "images/title/path_4.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "images/title/path_5.png",
+                "selectedIconPath": "images/title/path_6.png"
+            }
+        ]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#C0C0C0",
+        "navigationBarTitleText": "漫游社",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

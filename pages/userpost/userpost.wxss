@@ -1,0 +1,61 @@
+/* pages/userpost/userpost.wxss */
+/* 标题 */
+.post-title{
+    height: 65px;
+    border-radius: 5px;
+    /* border:1px solid red; */
+    background-color: rgb(132, 179, 140);
+}
+.post-title text{
+    font-size: 23px;
+    font-weight:bold;
+}
+/* 帖子内容 */
+.Landlord{
+    margin-top: 5px;
+    /* border: 1px solid red; */
+    display:flex;
+    
+}
+
+.Landlord .user-info {
+    width: 60px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.Landlord .user-info image{
+    width: 60px;
+    height: 60px;
+}
+
+.Landlord .post-ctent{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-left: 5px;
+    box-shadow:0px 0px 1px 2px #ccc;
+}
+/* 评论导航 */
+.nav {
+    margin-top: 8px;
+    display:flex;
+    margin-bottom: 15px;
+    box-shadow:0px 0px 3px 4px #ccc;
+}
+
+.nav .post{
+    width: 70%;
+    height: 45px;
+    font-size: 30px;
+    /* border: 1px solid red; */
+}
+
+.nav .add-post{
+    width: 40%;
+    /* border: 1px solid red; */
+    font-size: 30px;
+    font-weight:bold;
+    text-align: center;
+    background-color: rgba(87, 122, 22, 0.356);
+    border-radius: 15px;
+}

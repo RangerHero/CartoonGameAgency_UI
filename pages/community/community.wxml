@@ -1,0 +1,18 @@
+<!--pages/community/community.wxml-->
+<view class="content">
+    <view class="title">
+        <text>所有社区</text>
+    </view>
+    <block wx:for="{{community}}" wx:key="community">
+        <view class="box-all" bindtap="toCommunity" data-id="{{item.id}}">
+            <view class="community-avatar">
+                <image src="{{item.logo}}"></image>
+            </view>
+            <view class="community-title">
+                <text>{{item.name}}</text>
+                <view class="community-docs">{{item.introduction}}</view>
+            </view>
+        </view>
+        <view class="null"></view>
+    </block>
+</view>

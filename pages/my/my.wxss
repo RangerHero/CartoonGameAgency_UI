@@ -1,0 +1,121 @@
+/* pages/my/my.wxss */
+/* 用户登录信息 */
+.user-info {
+    width: 100%;
+    height: 110px;
+    /* border: 2px solid red; */
+}
+
+.user-info .user-avatar {
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 3px;
+    border: 1px solid rgb(240, 171, 171);
+    border-radius: 25px;
+    background-color: #C0C0C0;
+    /* 弹性布局 */
+    display: flex;
+}
+
+.user-info image {
+    width: 120px;
+    height: 95px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 167, 167);
+}
+
+.user-info .user-avatar .user-name {
+    margin-top: 8px;
+    margin-left: 15px;
+    /* border: 1px solid red; */
+}
+
+.user-info .user-avatar .user-name text {
+    font-size: 70rpx;
+    font-weight: bold;
+}
+
+.user-info .user-avatar .user-name .user-birth {
+    margin-top: 5px;
+    /* border: 1px solid red; */
+}
+
+/* 用户信息 */
+
+.nav {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20rpx;
+    background-color: rgba(0, 209, 157, 0.664);
+    font-size: 50rpx;
+    border-radius:10px;
+}
+
+.nav-switch-style {
+    color: rgba(110, 12, 175, 0.247);
+}
+
+.nav view{
+    width: 33%;
+    height: 30px;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+/* 滑动页 */
+.navstate{
+    width: 100%;
+    height: 900px;
+    /* border: 1px solid red; */
+    border-radius:10px;
+}
+
+.style-roll {
+    margin-top: 3px;
+    /* background-color: rgb(130, 177, 247); */
+    width: 100%;
+    /* text-align: center; */
+}
+
+/* 用户帖子 */
+.user-post {
+    /* height: 80px; */
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    box-shadow:0px 0px 3px 4px #ccc;
+}
+
+.user-post .one-post{
+    width: 90%;
+    /* border: 1px solid red; */
+}
+
+.user-post .one-post .post-title{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+/* 用户动态 */
+.user-invi{
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    box-shadow:0px 0px 3px 4px #ccc;
+}
+
+.one-invi .invi-title{
+    font-size: 20px;
+    /* font-weight:bold; */
+}
+
+.one-invi .invi-user{
+    margin-top: 5px;
+    margin-left: 20px;
+    /* border: 1px solid red; */
+}

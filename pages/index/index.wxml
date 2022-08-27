@@ -1,0 +1,57 @@
+<!--index.wxml-->
+
+<!-- 轮播图展示 -->
+<view class="carousel">
+    <swiper autoplay="ture" interval="10000" indicator-dots="red" indicator-active-color="pink" class="sw">
+        <swiper-item>
+            <image src="http://localhost:8080/images/title/indeximages/3.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="http://localhost:8080/images/title/indeximages/2.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="http://localhost:8080/images/title/indeximages/1.jpg"></image>
+        </swiper-item>
+    </swiper>
+</view>
+
+<!-- 导航栏展示 -->
+<view class="conter">
+    <block wx:for="{{conter}}" wx:key="conter">
+        <view class="conter-classify" bindtap="toClsaaify" data-id="{{item.id}}">
+            <image src="{{item.image}}"></image>
+            <view>{{item.name}}</view>
+        </view>
+    </block>
+
+</view>
+<!-- 热门社区展示 -->
+<view class="content">
+    <text> 热门社区</text>
+    <view class="null"></view>
+    <block wx:for="{{hotinvi}}" wx:key="hotinvi">
+        <view class="box-all" bindtap="toCommunity" data-id="{{item.id}}">
+            <view class="community-avatar">
+                <image src="{{item.logo}}"></image>
+            </view>
+            <view class="community-text">
+                <view class="community-title">
+                    <text>{{item.name}}</text>
+                    <view class="community-docs">{{item.introduction}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="null"></view>
+    </block>
+
+    <text> 热门帖子</text>
+    <view class="null"></view>
+    <block wx:for="{{hotpost}}" wx:key="hotpost">
+        <view class="user-post">
+            <view class="one-post" bindtap="toUserPost" data-id="{{item.id}}">
+                <view class="post-title">{{item.name}}</view>
+                <view class="post-user">{{item.title}}</view>
+            </view>
+        </view>
+    </block>
+</view>

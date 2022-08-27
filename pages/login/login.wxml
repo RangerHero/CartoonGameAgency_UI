@@ -1,0 +1,26 @@
+<!--pages/login/login.wxml-->
+<view class='container'>
+  <view class='header'>
+    <image src="/images/title/title-logo-01.png"></image>
+    <!-- <text>漫游社</text> -->
+  </view>
+  <form bindsubmit="formSubmit" >
+    <view class='section' >
+      <text>账号：</text>
+      <input type='number' placeholder='请输入账号' value="" bindinput="usernameInput"/>
+    </view>
+    <view class='section' >
+      <text>密码:</text>
+      <input password='true' placeholder='请输入密码' value="" bindinput="passwordInput"/>
+    </view>
+    <view class='button'>
+      <button type='primary' form-type='submit' bindtap="userlogin">登录</button>
+    </view>
+    <view class='button'>
+      <button type='primary' form-type='submit' bindtap="">注册</button>
+    </view>
+  </form>
+    <view class='fpwd' bindtap='findpwd'>
+      <text>忘记密码</text>
+    </view>
+</view>

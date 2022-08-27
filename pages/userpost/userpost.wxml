@@ -1,0 +1,35 @@
+<!--pages/userpost/userpost.wxml-->
+<!-- 社区名字 -->
+<view class="post-title">
+    <text>{{invitation.title}}</text>
+</view>
+<!-- 楼主 -->
+<view class="Landlord">
+    <view class="user-info">
+        <image src="{{invitation.userAvatar}}"></image>
+        <view>{{invitation.userName}}</view>
+    </view>
+    <view class="post-ctent">
+        <text>{{invitation.content}}</text>
+    </view>
+</view>
+<!-- 用户评论 -->
+<!-- 导航 -->
+<view class="nav">
+    <view class="post">评论</view>
+    <view class="add-post" bindtap="toComment" data-id="{{invitation.id}}">发表评论</view>
+</view>
+<!-- 内容 -->
+<block wx:for="{{comment}}" wx:key="comment">
+    <view class="Landlord">
+    <view class="user-info">
+        <image src="{{item.user_avatar}}"></image>
+        <view>{{item.username}}</view>
+    </view>
+    <view class="post-ctent">
+        <text>{{item.content}}</text>
+    </view>
+</view>
+
+</block>
+

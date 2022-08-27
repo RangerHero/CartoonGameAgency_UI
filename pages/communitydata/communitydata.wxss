@@ -1,0 +1,94 @@
+/* pages/communitydata/communitydata.wxss */
+/* 标题 */
+.box-all {
+    width: 100%;
+    /* height: 72px; */
+    /* border: 1px solid black; */
+    display:flex;
+    /* box-shadow:0px 0px 3px 4px #ccc; */
+}
+
+.box-all .community-avatar{
+    width: 72px;
+    height: 72px;
+    margin-left: 5px;
+    /* border: 1px solid red; */
+}
+
+.box-all .community-avatar image{
+    width: 71px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.box-all .community-title{
+    width: 300px;
+    /* height: 62px; */
+    margin-top: 8px;
+    margin-left: 5px;
+    /* border: 1px solid red; */
+}
+.box-all .community-title text{
+    font-size: 21px;
+    font-weight:bold;
+}
+
+.community-image {
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid red; */
+    /* display: flex;
+    justify-content: center; */
+}
+.community-image .box-image{
+    width: 100%;
+}
+
+.community-image .box-image image{
+    width: 100%;
+    height: 150px;
+}
+
+/* 导航栏 */
+.nav {
+    display:flex;
+    margin-bottom: 15px;
+    box-shadow:0px 0px 3px 4px #ccc;
+}
+
+.nav .post{
+    width: 70%;
+    height: 45px;
+    font-size: 30px;
+    /* border: 1px solid red; */
+}
+
+.nav .add-post{
+    width: 30%;
+    /* border: 1px solid red; */
+    font-size: 30px;
+    font-weight:bold;
+    text-align: center;
+    background-color: rgba(87, 122, 22, 0.356);
+    border-radius: 15px;
+}
+
+/* 社区帖子 */
+.user-post {
+    height: 80px;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    box-shadow:0px 0px 3px 4px #ccc;
+}
+
+.user-post .one-post{
+    width: 90%;
+    /* border: 1px solid red; */
+}
+
+.user-post .one-post .post-title{
+    font-size: 20px;
+    font-weight:bold;
+}

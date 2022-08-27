@@ -1,0 +1,11 @@
+/* pages/comment/comment.wxss */
+/* .input{
+  border: 1px solid red;
+} */
+
+.input textarea{
+  height: 500px;
+  border: 4rpx solid gray;
+  margin: 20px auto;
+  /* border-radius: 10rpx; */
+}

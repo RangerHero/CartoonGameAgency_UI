@@ -1,0 +1,30 @@
+/* pages/addpost/addpost.wxss */
+/* 标题 */
+.title {
+  height: 70px;
+  /* border: 1px solid red; */
+
+}
+
+.title text{
+  /* border: 1px solid red; */
+  font-size: 25px;
+}
+
+.title input{
+  border: 4rpx solid gray;
+  margin-top: 10px;
+  /* border-radius: 10rpx; */
+}
+
+/* 内容 */
+.content text{
+  /* border: 1px solid red; */
+  font-size: 25px;
+}
+
+.content textarea{
+  height: 500px;
+  border: 4rpx solid gray;
+  margin: 1px auto;
+}
